@@ -1,0 +1,20 @@
+# Runtime output and uploads
+runtime/
+
+# Dependencies and environment
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Local Sites/template metadata
+.openai/

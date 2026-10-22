@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FolioForge is a focused PDF workbench." />
+    <title>FolioForge — PDF workbench</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header shell">
+      <a href="#top" class="brand" aria-label="FolioForge home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>FolioForge</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#tools">Tools</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+      <div class="status-badge"><span>✦</span> PDF tools</div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <p class="eyebrow">The no-account PDF desk</p>
+        <h1>Make documents<br /><em>move with you.</em></h1>
+        <p class="hero-copy">A focused workbench for the everyday PDF jobs that get in the way. Bring documents together, reshape pages, and keep work moving.</p>
+        <a class="button button-primary" href="#workspace">Start with a PDF <span aria-hidden="true">↘</span></a>
+        <div class="hero-notes" aria-label="Product promises">
+          <span>Fast tools</span><span>Clear workflows</span><span>Made for documents</span>
+        </div>
+      </section>
+
+      <section class="tool-rail shell" id="tools" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <p class="eyebrow">Available now</p>
+          <h2 id="tools-title">One desk, five jobs.</h2>
+          <p>Choose a tool to set up your workspace.</p>
+        </div>
+        <div class="tool-grid" role="list">
+          <button class="tool-card is-selected" type="button" data-tool="merge" role="listitem">
+            <span class="tool-icon icon-merge" aria-hidden="true"></span><strong>Merge</strong><small>Join PDFs in order</small><b>↘</b>
+          </button>
+          <button class="tool-card" type="button" data-tool="split" role="listitem">
+            <span class="tool-icon icon-split" aria-hidden="true"></span><strong>Split</strong><small>One PDF, separate pages</small><b>↘</b>
+          </button>
+          <button class="tool-card" type="button" data-tool="compress" role="listitem">
+            <span class="tool-icon icon-compress" aria-hidden="true"></span><strong>Compress</strong><small>Lighten a document</small><b>↘</b>
+          </button>
+          <button class="tool-card" type="button" data-tool="rotate" role="listitem">
+            <span class="tool-icon icon-rotate" aria-hidden="true">↻</span><strong>Rotate</strong><small>Turn every page</small><b>↘</b>
+          </button>
+          <button class="tool-card" type="button" data-tool="extract" role="listitem">
+            <span class="tool-icon icon-extract" aria-hidden="true"></span><strong>Extract</strong><small>Keep chosen pages</small><b>↘</b>
+          </button>
+        </div>
+      </section>
+
+      <section class="workspace shell" id="workspace" aria-labelledby="workspace-title">
+        <div class="workspace-header">
+          <div>
+            <p class="eyebrow" id="tool-kicker">PDF assembly</p>
+            <h2 id="workspace-title">Merge PDFs</h2>
+          </div>
+          <span class="step-count">01 <i></i> 02 <i></i> 03</span>
+        </div>
+        <div class="workspace-panel">
+          <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-describedby="drop-help">
+            <input id="file-input" type="file" accept="application/pdf,.pdf" multiple hidden />
+            <span class="upload-orbit" aria-hidden="true"><i></i><i></i></span>
+            <h3 id="drop-title">Drop two or more PDFs here</h3>
+            <p id="drop-help">or choose PDF files</p>
+            <button class="button button-dark" type="button" id="choose-files">Choose PDFs <span aria-hidden="true">+</span></button>
+            <small id="file-limit">Up to 8 PDFs · 40 MB combined</small>
+          </div>
+          <div class="queue-area" aria-live="polite">
+            <div class="queue-empty" id="queue-empty"><span>◇</span> Your selected files will appear here.</div>
+            <ol id="file-list" class="file-list"></ol>
+          </div>
+          <div class="tool-options" id="tool-options"></div>
+          <div class="action-row">
+            <p id="action-hint">Arrange files in the order you want them combined.</p>
+            <button class="button button-accent" type="button" id="process-button" disabled>Merge PDFs <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="status-message" id="status-message" role="status"></div>
+          <div class="result-card" id="result-card" hidden>
+            <div><span class="result-check">✓</span><div><strong id="result-title">Your file is ready.</strong><small id="result-meta"></small></div></div>
+            <a class="button button-dark" id="download-link" download>Download <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="privacy shell" id="privacy">
+        <div class="privacy-stamp" aria-hidden="true"><span>YOUR</span><i>✦</i><span>DOCS</span></div>
+        <div>
+          <p class="eyebrow">Documents, simplified</p>
+          <h2>Everything you need<br />to shape a PDF.</h2>
+        </div>
+        <p>Bring everyday document jobs into one focused workspace: combine files, separate pages, reduce size, change orientation, and keep only what you need.</p>
+      </section>
+    </main>
+
+    <footer class="shell"><span>FolioForge · PDF workbench</span><span>Built with an original interface and practical PDF tools.</span></footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

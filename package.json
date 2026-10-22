@@ -1,0 +1,23 @@
+{
+  "name": "folioforge-pdf-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A practical PDF workbench.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SATWIKOJHA/folioforge-pdf-workbench.git"
+  },
+  "homepage": "https://github.com/SATWIKOJHA/folioforge-pdf-workbench#readme",
+  "bugs": {
+    "url": "https://github.com/SATWIKOJHA/folioforge-pdf-workbench/issues"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
